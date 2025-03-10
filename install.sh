@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir -p $HOME/.config || true
-declare -a CONFIGS=("fish" "mc" "nvim" "wezterm")
+declare -a CONFIGS=("fish" "mc" "nvim" "wezterm" "borders" "aerospace")
 
 if [ ! -d $PWD/dotfiles ]; then
   echo "This script needs to be run from repo directory"
