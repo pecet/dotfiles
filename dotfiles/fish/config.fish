@@ -3,7 +3,9 @@ export TERM="tmux-256color"
 export COLORTERM="truecolor"
 
 export LANG="en_US.UTF-8"
-export LC_ALL=$LANG
+export LANGUAGE="en_US"
+export LC_ALL=
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -20,7 +22,7 @@ op completion fish | source
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/homebrew/anaconda3/bin/conda
-    eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    eval /opt/homebrew/anaconda3/bin/conda "shell.fish" hook $argv | source
 end
 # <<< conda initialize <<<
 
